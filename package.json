@@ -1,0 +1,33 @@
+{
+  "name": "reavas",
+  "version": "0.1.1",
+  "description": "React + Canvas utility",
+  "main": "dist/Reavas.js",
+  "scripts": {
+    "build": "babel -d dist/ src/"
+  },
+  "keywords": [
+    "react",
+    "canvas"
+  ],
+  "author": "James Formica",
+  "license": "MIT",
+  "homepage": "https://github.com/jamesformica/reavas#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesformica/reavas.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-preset-airbnb": "^2.4.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "react": "^16.3.1"
+  },
+  "peerDependencies": {
+    "react": "^16.3.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1"
+  }
+}
