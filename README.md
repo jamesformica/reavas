@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/reavas.svg)](https://badge.fury.io/js/reavas)
+
 # Reavas ⚛ + 🖼 (react + canvas )
 
 This is a tiny react component that takes in the id of a `<canvas>` and provides you with `setup()` and `paint()` callbacks.
