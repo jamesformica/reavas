@@ -8,6 +8,7 @@ class Reavas extends Component {
 
     this.lastCheck = window.performance.now();
     this.fpsInterval = 1000 / 60;
+    this.isActive = true;
 
     // used for debugging
     this.frameCount = 0;
@@ -27,7 +28,13 @@ class Reavas extends Component {
     window.requestAnimationFrame(this.loop);
   }
 
+  componentWillUnmount() {
+    this.isActive = false;
+  }
+
   loop(timestamp) {
+    if (!this.isActive) return;
+
     window.requestAnimationFrame(this.loop);
 
     const elapsed = timestamp - this.lastCheck
